@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD TABLE</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+  </head>
+  <body>
+    <main class="mt-5">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-10 col-sm-4 table-left">
+            <div class="p-4">
+              <label for="fname" class="ps-1">First Name</label>
+              <input type="text" id="fname" class="mb-4" />
+
+              <label for="lname" class="ps-1">Last Name</label>
+              <input type="text" id="lname" class="mb-4" />
+
+              <label for="Hobbies" class="ps-1">Hobbies</label>
+              <input type="text" id="Hobbies" class="mb-4" />
+
+              <label for="phoneNUmber" class="ps-1">Phone Number</label>
+              <input type="number" id="number" class="mb-4" />
+
+              <label for="Password" class="ps-1">Password</label>
+              <input type="password" id="password" class="mb-4" />
+
+              <button
+                class="btn crud-btn d-flex justify-content-center m-auto mt-5 fw-bold"
+                onclick="collectData()"
+              >
+                Submit
+              </button>
+            </div>
+            <!-- <div
+              class="bg-light w-100 button-section text-center h5 py-3"
+              onclick="collectCustomerData()"
+            >
+              Submit
+            </div> -->
+          </div>
+
+          <div class="col-10 col-sm-4 table-right">
+            <div class="right-sec">
+              <h4 class="">Latest Registrations</h4>
+              <div class="latestCustomers text-center">
+                <div class="customersList">BIY</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-blur hidden" onclick="closeen()"></div>
+      <div class="conatiner">
+        <div class="row">
+          <div
+            class="update p-3 col-10 col-md-7 col-lg-3 mx-auto hidden m-auto"
+          >
+            <span class="close" onclick="closeen()"><p>X</p></span>
+            <h2>Update</h2>
+
+            <label for="fname" class="ps-1">First Name</label>
+            <input type="text" class="fname" class="mb-4" />
+
+            <label for="lname" class="ps-1">Last Name</label>
+            <input type="text" class="lname" class="mb-4" />
+
+            <label for="Hobbies" class="ps-1">Hobbies</label>
+            <input type="text" class="Hobbies" class="mb-4" />
+
+            <label for="phoneNUmber" class="ps-1">Phone Number</label>
+            <input type="number" class="number" class="mb-4" />
+
+            <label for="Password" class="ps-1">Password</label>
+            <input type="password" class="password" class="mb-4" />
+            <div id="post">I am staying here</div>
+            <div class="m-auto mt-3" id="updateSection">
+              <!-- <button id="updateBtn"
+            class="btn crud-btn d-flex justify-content-center w-50 m-auto fw-bold"
+            onclick="updateStudents(i)"
+          >
+            Update
+          </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="row justify-content-center">
+      <div class="col-10">
+        <div class="mt-5 overflow-scroll">
+          <table class="table">
+            <thead></thead>
+            <tr>
+              <th>S/N</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Hobbies</th>
+              <th>Phone Number</th>
+              <th>Password</th>
+              <th>Delete</th>
+              <th>Edit</th>
+            </tr>
+            <tbody id="table" class="tables"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

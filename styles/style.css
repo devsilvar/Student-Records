@@ -1,0 +1,135 @@
+.container {
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.table-left {
+  background-color: orange;
+  width: 100%;
+}
+.table-right {
+  background-color: rgb(12, 8, 0);
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 2% 8%;
+  border: 1px solid transparent;
+  border-radius: 19px;
+}
+label {
+  color: white;
+}
+
+.button-section {
+  width: 100%;
+  padding: none;
+}
+
+.crud-btn {
+  width: 100%;
+  padding: 2% 10% !important;
+  background-color: black !important;
+  color: orange !important;
+  border-radius: 29px !important;
+  border: 3px solid orange !important;
+}
+
+.latestCustomers .customers {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  width: 60%;
+}
+
+.latestCustomers .customers span {
+  display: block;
+  background-color: white;
+  padding: 3px;
+  color: orange;
+  border-radius: 50%;
+  width: 15%;
+}
+
+.latestCustomers .customers p {
+  /* padding: 10px; */
+  margin: 10px 6px;
+  color: white;
+}
+
+.right-sec h4 {
+  background-color: orange;
+  color: black;
+  padding: 10px 19px;
+  width: fit-content;
+  margin: auto;
+  font-size: large;
+  font-weight: 400;
+  border-radius: 29px;
+}
+
+.right-sec {
+  position: relative;
+  top: -4%;
+}
+
+tbody tr:nth-child(even) {
+  /* border-bottom: 3px solid #dddddd; */
+}
+
+tbody tr {
+  border-bottom: 1px solid black;
+}
+
+.update {
+  background-color: white;
+  color: black !important;
+  position: fixed;
+  top: 15%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.update label {
+  color: black;
+}
+.update input {
+  border: 2px solid black;
+}
+
+.close p {
+  font-weight: 700;
+  font-size: 1.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 3px 15px;
+}
+
+.close {
+  float: right;
+  height: 40px;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+.hidden,
+#hidden {
+  display: none;
+}
+
+.modal-blur {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+}
+
+.close {
+  cursor: pointer;
+}
